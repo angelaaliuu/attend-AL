@@ -26,7 +26,7 @@
 
 	var trial_list = trials_2; // a little confused about what this code does?
 
-	var target_location = jsPsych.randomization.shuffle(["left","right"])[0]
+	var target_location = jsPsych.randomization.shuffle(["left","right"])[0] // randomizing the target location?
 
 
   var timeline = [];
@@ -55,7 +55,7 @@
 	    timeline.push({
 	      type: 'attend',
 	      stimuli: cur_stims,
-	  	trial_duration: 1250,
+	  	trial_duration: 800,
 	  	response_ends_trial: false,
 	      prompt: "",
 	  	  data: {trial_type: "sequence",structured_sequence_loc: structured_sequence_loc}
